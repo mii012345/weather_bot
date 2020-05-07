@@ -33,6 +33,9 @@ async def on_message(message):
             resp = json.loads(resp.decode('utf-8'))
 
             channel = client.get_channel(test_channel)
+            msg = resp["description"]["text"]
+            msg += "¥n 詳しくはこちらから、"
+            msg += resp["link"]
             await channel.send(resp["description"]["text"])
 
 
