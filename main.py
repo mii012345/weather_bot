@@ -25,7 +25,7 @@ async def on_ready():
 async def on_message(message):
     if message.author.bot:
         return
-    reg_res = re.compile(u"(.+)の天気は？").search(message.content)
+    reg_res = re.compile(u"(.+)の天気").search(message.content)
     if reg_res:
         if reg_res.group(1) in citycodes.keys():
             citycode = citycodes[reg_res.group(1)]
