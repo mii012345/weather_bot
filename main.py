@@ -6,7 +6,7 @@ import json
 
 client = discord.Client()
 
-Token = "NzA2MDM0NjgxMzg4MzM1MTQ0.XrPaxA.BmIP2hhiXFBdM4AnD-P8SHevCh4"
+Token = ""
 
 test_channel = 707894585984024589
 
