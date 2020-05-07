@@ -36,7 +36,7 @@ async def on_message(message):
             msg = resp["description"]["text"]
             msg += "¥n 詳しくはこちらから、"
             msg += resp["link"]
-            await channel.send(resp["description"]["text"])
+            await channel.send(msg)
 
 
 @tasks.loop(seconds=60)
